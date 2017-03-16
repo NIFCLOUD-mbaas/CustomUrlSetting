@@ -1,5 +1,5 @@
 # カスタムURLの設定
-<font size="2"><div style="text-align: right;">_NIFTY Confidential.<br>2017/-/-_</div></font>
+<font size="2"><div style="text-align: right;">_NIFTY Confidential.<br>2017/3/16_</div></font>
 
 __目次__
 1. 概要・免責
