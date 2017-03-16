@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Language" content="ja">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="../css/style.css" type="text/css" media="all" />
+<script type="text/javascript" src="../system/config.js" charset="UTF-8"></script>
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript" src="../system/mailAddress.js" charset="UTF-8"></script>
+<script>
+  var set = null;
+
+  window.onload = function() {
+    set = new Set();
+  }
+
+  function check() {
+    set.checkForm();
+  }
+</script>
+
+<title>メールアドレス会員登録テンプレート</title>
+</head>
+
+<body>
+<div id="container">
+  <header>
+    <h1>メールアドレス会員登録テンプレート</h1>
+  </header>
+
+  <noscript><p>ご利用中のブラウザでは、JavaScriptが無効になっています。サイトをご利用の場合はブラウザ設定でJavaScriptを有効にしてご利用ください。</p></noscript>
+    <div id="contents">
+      <form name="mailAddressForm">
+        <div class="unit">
+              <p>パスワードを入力してください。</p>
+          <input type="password" name="password">
+        </div>
+        <div class="unit">
+              <p>確認の為もう一度入力してください。</p>
+          <input type="password" name="checkPassword">
+        </div>
+      </form>
+      <div class="align-r">
+         <a class="btn font-l" onclick="check()">登録する</a>
+      </div>
+  </div>
+</div>
+</body>
+</html>
