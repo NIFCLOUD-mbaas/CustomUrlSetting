@@ -1,5 +1,5 @@
 # カスタムURLの設定
-<font size="2"><div style="text-align: right;">_NIFTY Confidential.<br>2017/3/16_</div></font>
+<font size="2"><div style="text-align: right;">_FUJITSU CLOUD TECHNOLOGIES LIMITED Confidential.<br>2017/3/16_</div></font>
 
 __目次__
 1. 概要・免責
@@ -11,7 +11,7 @@ __目次__
 1. 登録結果ページの設定
 
 <div style="position: absolute; right: 0mm; top: 203mm;">
-<font size="1">_Copyright © NIFTY Corporation All Rights Reserved._</font>
+<font size="1">_Copyright © FUJITSU CLOUD TECHNOLOGIES LIMITED All Rights Reserved._</font>
 </div>
 
 <div style="page-break-before:always"></div>
