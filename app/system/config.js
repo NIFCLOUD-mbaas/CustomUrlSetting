@@ -20,7 +20,7 @@ var Config = {
   "FORM_NAME_MAIL" : "mailAddressForm",
   "APPID_KEY" : "applicationId",
   "VERSION_NO" : "version",
-  "BASE_URL" : "https://mb.api.cloud.nifty.com/",
+  "BASE_URL" : "https://mbaas.api.nifcloud.com/",
   "APPLICATIONS_PATH" : "/applications/",
   "API_PATH" : "/requestPasswordResetUpdate",
   "API_PATH_MAIL" : "/mailAddressUser",
