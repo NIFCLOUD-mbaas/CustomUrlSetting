@@ -1,5 +1,5 @@
 /*
-Copyright 2017 FUJITSU CLOUD TECHNOLOGIES LIMITED All Rights Reserved.
+Copyright 2017 - 2018 FUJITSU CLOUD TECHNOLOGIES LIMITED All Rights Reserved.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -20,7 +20,7 @@ var Config = {
   "FORM_NAME_MAIL" : "mailAddressForm",
   "APPID_KEY" : "applicationId",
   "VERSION_NO" : "version",
-  "BASE_URL" : "https://mb.api.cloud.nifty.com/",
+  "BASE_URL" : "https://mbaas.api.nifcloud.com/",
   "APPLICATIONS_PATH" : "/applications/",
   "API_PATH" : "/requestPasswordResetUpdate",
   "API_PATH_MAIL" : "/mailAddressUser",

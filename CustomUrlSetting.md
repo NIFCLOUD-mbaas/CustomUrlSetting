@@ -1,5 +1,5 @@
 # カスタムURLの設定
-<font size="2"><div style="text-align: right;">_FUJITSU CLOUD TECHNOLOGIES LIMITED Confidential.<br>2017/3/16_</div></font>
+<font size="2"><div style="text-align: right;">_FUJITSU CLOUD TECHNOLOGIES LIMITED Confidential.<br>2018/6/28_</div></font>
 
 __目次__
 1. 概要・免責
@@ -7,20 +7,18 @@ __目次__
 1. 独自ドメインの設定
 1. サーバでのリクエスト識別処理の設定
 1. ブラウザでの動作確認
-1. ニフティクラウド mobile backend からの動作確認
+1. ニフクラ mobile backend からの動作確認
 1. 登録結果ページの設定
 
-<div style="position: absolute; right: 0mm; top: 203mm;">
-<font size="1">_Copyright © FUJITSU CLOUD TECHNOLOGIES LIMITED All Rights Reserved._</font>
-</div>
+<font size="1"><div style="position: absolute; left: 30mm; top: 188mm;">_Copyright © FUJITSU CLOUD TECHNOLOGIES LIMITED All Rights Reserved._</div></font>
 
 <div style="page-break-before:always"></div>
 
 ## 1. 概要・免責
 パスワード変更画面や、無効リンクページ、メールアドレス確認画面等、アプリの会員がアクセスするウェブページに対して、独
 自のドメインを設定することができます。
-この文書では、既にニフティクラウド mobile backend をご利用中のお客様が、上記のような会員がアクセスするページに独自ドメインを適用する手順を順に説明しています。
-なお、この文書は2017年3月16日に作成されたものであり、バージョンは 2.0 となります。
+この文書では、既にニフクラ mobile backend をご利用中のお客様が、上記のような会員がアクセスするページに独自ドメインを適用する手順を順に説明しています。
+なお、この文書は2018年6月28日に更新されたものであり、バージョンは 2.0 となります。
 また、付属のテンプレートファイルのライセンスにつきましては、LICENSE.txt をご覧ください。
 
 __※独自ドメインを割り当てるサーバはお客様ご自身でご用意いただく必要がございます。予めご了承ください。__
@@ -42,7 +40,7 @@ __※独自ドメインを割り当てるサーバはお客様ご自身でご用
 
 ## 3. 独自ドメインの設定
 設定したい独自ドメインを、お持ちのサーバーに割り当てます。
-その後、ニフティクラウド mobile backendの[コントロールパネル]>[アプリ設定]>[会員認証設定ページ]の「URL設定」欄に、ニフティクラウド mobile backend に代わってユーザのアクセスを受け付けるURL（独自ドメイン）を入力します。
+その後、ニフクラ mobile backendの[コントロールパネル]>[アプリ設定]>[会員認証設定ページ]の「URL設定」欄に、ニフクラ mobile backend に代わってユーザのアクセスを受け付けるURL（独自ドメイン）を入力します。
 
 <font size="2">例）<br>独自ドメインが「`http://example.com/`」で、同封のテンプレート（appフォルダ）を使用する場合は、「`http://example.com/app/`」と入力します</font>
 
@@ -86,7 +84,7 @@ __※独自ドメインを割り当てるサーバはお客様ご自身でご用
 
 以下のURLへtokenパラメータを付与してリダイレクトし、GETリクエストを送信します。
 ```url
-https://mb.api.cloud.nifty.com
+https://mbaas.api.nifcloud.com
        /{API バージョン}
        /applications/{アプリケーション ID}
        /mailAddressConfirm?token={ワンタイムトークン}
@@ -105,7 +103,8 @@ https://mb.api.cloud.nifty.com
 #### requestMailAddressUserEntry: メールアドレス登録
 * 以下のようにパラメータを付与してアクセスして下さい
  * メールアドレス登録画面へリダイレクトされれば正常に動作しております。
- ```
+
+```
 link=requestMailAddressUserEntry
     &version={API バージョン}
     &applicationId={アプリケーション ID}
@@ -119,7 +118,8 @@ link=requestMailAddressUserEntry
 #### requestPasswordReset: パスワード再発行登録
 * 以下のようにパラメータを付与してアクセスして下さい
  * パスワード変更画面へリダイレクトされれば正常に動作しております。
- ```
+
+```
 link=requestPasswordReset
     &version={API バージョン}
     &applicationId={アプリケーション ID}
@@ -130,9 +130,8 @@ link=requestPasswordReset
 
 <div style="page-break-before:always"></div>
 
-## 6. ニフティクラウド mobile backend からの動作確認
-ニフティクラウド mobile backend を利用しているアプリケーションからメールアドレス登録要求、パスワード変更要求の
-処理を行い、実際にメールを送信して動作確認をします。
+## 6. ニフクラ mobile backend からの動作確認
+ニフクラ mobile backend を利用しているアプリケーションからメールアドレス登録要求、パスワード変更要求の処理を行い、実際にメールを送信して動作確認をします。
 受信したメールアドレスに記載されているURLが、お客様が設定した独自ドメインのURLであるかご確認ください。
 該当URLよりメールアドレス登録、パスワード変更を行うことができれば正常に動作しております。
 
@@ -143,7 +142,7 @@ link=requestPasswordReset
 ## 7. 登録結果ページの設定
 お客様のサーバで登録が成功した後に遷移するページを用意します。（テンプレートをご利用の場合すでに用意されています。必要に応じて編集してご利用下さい。）
 
-ニフティクラウド mobile backend での処理の後、それぞれ以下のURLにリダイレクトされます。
+ニフクラ mobile backend での処理の後、それぞれ以下のURLにリダイレクトされます。
 
 * メールアドレス会員登録完了
 ```

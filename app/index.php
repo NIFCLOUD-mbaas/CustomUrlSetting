@@ -1,6 +1,6 @@
 <?php
 /*
-Copyright 2017 FUJITSU CLOUD TECHNOLOGIES LIMITED All Rights Reserved.
+Copyright 2017 - 2018 FUJITSU CLOUD TECHNOLOGIES LIMITED All Rights Reserved.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -51,7 +51,7 @@ if (isset($_GET['link']) && isset($_GET['version']) && isset($_GET['applicationI
       exit;
     case "mailAddressConfirm":
       //ニフティクラウド mobile backendのメールアドレス確認完了処理APIをコール
-      header('Location: https://mb.api.cloud.nifty.com/'.$api_version.'/applications/'.$application_id.'/mailAddressConfirm?token='.$token, true, 303);
+      header('Location: https://mbaas.api.nifcloud.com/'.$api_version.'/applications/'.$application_id.'/mailAddressConfirm?token='.$token, true, 303);
       exit;
     default:
       //エラー画面へリダイレクト
