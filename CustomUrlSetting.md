@@ -34,7 +34,7 @@ __※独自ドメインを割り当てるサーバはお客様ご自身でご用
 * テンプレートをご利用の場合は、appフォルダごとサーバーにアップロードして下さい
  * 動作確認後、必要に応じて本テンプレートを編集してご利用下さい
 
-<center>![app_folder](images/app_folder.png)</center>
+<div align="center"><img src="images/app_folder.png"></div>
 
 <div style="page-break-before:always"></div>
 
@@ -44,7 +44,7 @@ __※独自ドメインを割り当てるサーバはお客様ご自身でご用
 
 <font size="2">例）<br>独自ドメインが「`http://example.com/`」で、同封のテンプレート（appフォルダ）を使用する場合は、「`http://example.com/app/`」と入力します</font>
 
-<center>![url_setting](images/url_setting.png)</center>
+<div align="center"><img src="images/url_setting.png"></div>
 
 * メールアドレス登録要求、パスワード変更要求の際に送信されるメールにこのURLが表示されます。
 
@@ -98,7 +98,7 @@ https://mbaas.api.nifcloud.com
 * 設定したカスタムURLへそのまま（パラメータを付与せずに）アクセスして下さい
  * 下記のように、Errorテンプレートページへリダイレクトされれば正常に動作しております。
 
-<center>![errorTemplate](images/errorTemplate.png)</center>
+<div align="center"><img src="images/errorTemplate.png"></div>
 
 #### requestMailAddressUserEntry: メールアドレス登録
 * 以下のようにパラメータを付与してアクセスして下さい
@@ -111,7 +111,7 @@ link=requestMailAddressUserEntry
     &token={ワンタイムトークン}
 ```
 
-<center>![requestMailAddressUserEntry_redirect](images/requestMailAddressUserEntry_redirect.png)</center>
+<div align="center"><img src="images/requestMailAddressUserEntry_redirect.png"></div>
 
 <div style="page-break-before:always"></div>
 
@@ -126,7 +126,7 @@ link=requestPasswordReset
     &token={ワンタイムトークン}
 ```
 
-<center>![requestPasswordReset_redirect](images/requestPasswordReset_redirect.png)</center>
+<div align="center"><img src="images/requestPasswordReset_redirect.png"></div>
 
 <div style="page-break-before:always"></div>
 
@@ -135,7 +135,7 @@ link=requestPasswordReset
 受信したメールアドレスに記載されているURLが、お客様が設定した独自ドメインのURLであるかご確認ください。
 該当URLよりメールアドレス登録、パスワード変更を行うことができれば正常に動作しております。
 
-<center>![registration_complete](images/registration_complete.png)</center>
+<div align="center"><img src="images/registration_complete.png"></div>
 
 <div style="page-break-before:always"></div>
 
