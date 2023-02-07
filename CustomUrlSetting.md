@@ -64,10 +64,10 @@ __※独自ドメインを割り当てるサーバはお客様ご自身でご用
 ### サンプル
 
 * requestMailAddressUserEntry: メールアドレス登録
-<center>![requestMailAddressUserEntry](images/requestMailAddressUserEntry.png)</center>
+<center><img src="images/requestMailAddressUserEntry.png"></center>
 
 * requestPasswordReset: パスワード再発行登録
-<center>![requestPasswordReset](images/requestPasswordReset.png)</center>
+<center><img src="images/requestPasswordReset.png"></center>
 
 <div style="page-break-before:always"></div>
 
