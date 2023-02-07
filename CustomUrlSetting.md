@@ -1,5 +1,4 @@
 # カスタムURLの設定
-<font size="2"><div style="text-align: right;">_2018/6/28_</div></font>
 
 __目次__
 1. 概要・免責
@@ -10,7 +9,7 @@ __目次__
 1. ニフクラ mobile backend からの動作確認
 1. 登録結果ページの設定
 
-<font size="1"><div style="position: absolute; left: 30mm; top: 188mm;">_Copyright © FUJITSU CLOUD TECHNOLOGIES LIMITED All Rights Reserved._</div></font>
+<font size="1"><div style="position: absolute; left: 55mm; bottom: 5mm;">_Copyright © FUJITSU CLOUD TECHNOLOGIES LIMITED All Rights Reserved._</div></font>
 
 <div style="page-break-before:always"></div>
 
@@ -18,7 +17,7 @@ __目次__
 パスワード変更画面や、無効リンクページ、メールアドレス確認画面等、アプリの会員がアクセスするウェブページに対して、独
 自のドメインを設定することができます。
 この文書では、既にニフクラ mobile backend をご利用中のお客様が、上記のような会員がアクセスするページに独自ドメインを適用する手順を順に説明しています。
-なお、この文書は2018年6月28日に更新されたものであり、バージョンは 2.0 となります。
+なお、この文書のバージョンは 2.0 となります。
 また、付属のテンプレートファイルのライセンスにつきましては、LICENSE.txt をご覧ください。
 
 __※独自ドメインを割り当てるサーバはお客様ご自身でご用意いただく必要がございます。予めご了承ください。__
@@ -53,7 +52,7 @@ __※独自ドメインを割り当てるサーバはお客様ご自身でご用
 ## 4. サーバでのリクエスト識別処理の設定
 ユーザはメールに表示されるリンクをクリックすることでお客様のサーバへアクセスが可能です。
 メールに記載されるURLは以下のような形式です。
-なお、2017年3月16日現在での API バージョンは”2013-09-01”です。
+なお、API バージョンは”2013-09-01”です。
 
 ```
 {設定済カスタム URL}?link={mBaasAPI 名}
@@ -65,10 +64,10 @@ __※独自ドメインを割り当てるサーバはお客様ご自身でご用
 ### サンプル
 
 * requestMailAddressUserEntry: メールアドレス登録
-<center>![requestMailAddressUserEntry](images/requestMailAddressUserEntry.png)</center>
+<center><img src="images/requestMailAddressUserEntry.png"></center>
 
 * requestPasswordReset: パスワード再発行登録
-<center>![requestPasswordReset](images/requestPasswordReset.png)</center>
+<center><img src="images/requestPasswordReset.png"></center>
 
 <div style="page-break-before:always"></div>
 
